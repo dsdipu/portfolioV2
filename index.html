@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Dipankar Sarkar</title>
+<meta name="description" content="Dipankar Sarkar — Software Engineering student, President of GSEC, problem solver and community leader at Green University of Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="images/Logo/DS.png" alt="logo"></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#certifications">Certificates</a></li>
+    <li><a href="pages/blog.html">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+      <span id="themeText">Dark</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-mesh"></div>
+  <div class="hero-inner">
+
+    <div class="hero-left reveal">
+      <div class="hero-badge-pill">
+        <div class="status-dot"></div>
+        Open to Opportunities
+      </div>
+      <h1 class="hero-name">
+        Dipankar<br>
+        <span class="line2 grad-text">Sarkar</span>
+      </h1>
+      <p class="hero-role">
+        <span>Software Engineering Student</span>
+        <span class="role-sep">·</span>
+        <span>President of GSEC</span>
+        <span class="role-sep">·</span>
+        <span>Problem Solver</span>
+      </p>
+      <blockquote class="hero-quote">
+        "True leadership is not about commanding people — it's about inspiring a community to build something greater than itself."
+      </blockquote>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-arrow-down"></i> View My Work
+        </a>
+        <a href="https://dsdipu.github.io/portfolio/Pages/CV/CV.html" target="_blank" class="btn-outline">
+          <i class="fa-solid fa-file-lines"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-val">3+</div>
+          <div class="hero-stat-label">Projects Completed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">14+</div>
+          <div class="hero-stat-label">Certifications</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">Dean's</div>
+          <div class="hero-stat-label">Award Recipient</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo-col reveal">
+      <div class="hero-ring"></div>
+      <div class="hero-photo-card">
+        <img src="images/HeroSection/heroImage.jpg" alt="Dipankar Sarkar">
+      </div>
+      <div class="hero-float-badge fb-tl">
+        <div class="float-val">President</div>
+        <div class="float-lbl">of GSEC</div>
+      </div>
+      <div class="hero-float-badge fb-br">
+        <div class="float-val">GUB</div>
+        <div class="float-lbl">Green University</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-user"></i> Who I am</div>
+    <h2 class="section-title reveal">A bit <em>about me</em></h2>
+    <p class="section-sub reveal">Engineer. Mentor. Community builder.</p>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Software Engineering</strong> undergraduate at Green University of Bangladesh, deeply focused on foundational engineering principles, object-oriented design, and analytical problem solving.</p>
+        <p>Beyond coursework, I actively <strong>mentor junior students</strong>, fostering responsibility, structured thinking, and collaborative problem-solving skills. As <strong>President of the Green Software Engineering Club (GSEC)</strong>, I lead initiatives that bridge academics and industry.</p>
+        <p>I believe the best engineers are not just skilled with code — they are curious, empathetic, and driven by a desire to serve their community. I am all three.</p>
+      </div>
+      <div class="about-meta reveal">
+        <div class="card meta-card">
+          <div class="meta-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div><div class="meta-label">Institution</div><div class="meta-val">Green University of Bangladesh</div></div>
+        </div>
+        <div class="card meta-card">
+          <div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><div class="meta-label">Location</div><div class="meta-val">Keraniganj, Dhaka — 1310</div></div>
+        </div>
+        <div class="card meta-card">
+          <div class="meta-icon"><i class="fa-solid fa-crown"></i></div>
+          <div><div class="meta-label">Current Role</div><div class="meta-val">President, GSEC</div></div>
+        </div>
+        <div class="card meta-card">
+          <div class="meta-icon"><i class="fa-solid fa-medal"></i></div>
+          <div><div class="meta-label">Recognition</div><div class="meta-val">Dean's Award Recipient</div></div>
+        </div>
+        <div class="card meta-card">
+          <div class="meta-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div><div class="meta-label">Certifications</div><div class="meta-val">14+ Professional Certificates</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-book-open"></i> Academic background</div>
+    <h2 class="section-title reveal">My <em>Education</em></h2>
+    <p class="section-sub reveal">A strong academic foundation across science and engineering disciplines.</p>
+    <div class="edu-grid">
+      <div class="card edu-card reveal">
+        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2024 — Present</div>
+        <div class="edu-degree">BSc in Software Engineering</div>
+        <div class="edu-inst">Green University of Bangladesh</div>
+        <span class="edu-result"><i class="fa-solid fa-circle-notch fa-spin"></i> In Progress</span>
+      </div>
+      <div class="card edu-card reveal">
+        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2019 — 2021</div>
+        <div class="edu-degree">HSC in Science</div>
+        <div class="edu-inst">Kabi Nazrul Govt. College</div>
+        <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 5.00</span>
+      </div>
+      <div class="card edu-card reveal">
+        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2017 — 2019</div>
+        <div class="edu-degree">SSC in Science</div>
+        <div class="edu-inst">Sholla High School &amp; College</div>
+        <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 4.78</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-code"></i> What I've built</div>
+    <h2 class="section-title reveal">Featured <em>Projects</em></h2>
+    <p class="section-sub reveal">A selection of work that reflects both my technical ability and creative thinking.</p>
+    <div class="projects-grid">
+
+      <div class="card project-card reveal">
+        <div class="project-img-wrap">
+          <img class="project-img" src="images/Projects/Bangla-bhojon.webp" alt="Bangla Bhojon">
+        </div>
+        <div class="project-body">
+          <div class="project-num">01</div>
+          <h3 class="project-title">Bangla Bhojon — Restaurant Management System</h3>
+          <p class="project-desc">A Java-based desktop application managing full restaurant operations — order handling, billing, and workflow automation built with Swing.</p>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Swing</span><span class="tag">Netbeans IDE</span>
+          </div>
+          <a href="https://github.com/dsdipu/bangla-bhojon" target="_blank" class="project-link">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-img-wrap">
+          <img class="project-img" src="images/Projects/portfolio.png" alt="Portfolio">
+        </div>
+        <div class="project-body">
+          <div class="project-num">02</div>
+          <h3 class="project-title">Personal Academic Portfolio Website</h3>
+          <p class="project-desc">A fully responsive portfolio built in pure HTML &amp; CSS to present academic background, technical skills, and achievements cleanly.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+          <a href="https://github.com/dsdipu/portfolio" target="_blank" class="project-link">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-img-wrap">
+          <img class="project-img" src="images/Projects/Khuda-lagche.webp" alt="Khuda Lagche">
+        </div>
+        <div class="project-body">
+          <div class="project-num">03</div>
+          <h3 class="project-title">Khuda Lagche — Restaurant Showcase Landing Page</h3>
+          <p class="project-desc">A vibrant landing page celebrating authentic Bangladeshi flavors, designed with Tailwind CSS for a polished, modern visual experience.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">Tailwind CSS</span>
+          </div>
+          <a href="https://github.com/dsdipu/khuda-lagche" target="_blank" class="project-link">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-layer-group"></i> What I work with</div>
+    <h2 class="section-title reveal">Skills &amp; <em>Expertise</em></h2>
+    <p class="section-sub reveal">A growing command of languages, tools, and professional capabilities.</p>
+    <div class="skills-grid">
+
+      <div class="reveal">
+        <div class="skills-heading"><i class="fa-solid fa-terminal"></i> Technical Skills</div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-solid fa-c"></i> C / C++</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git &amp; Version Control</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-python"></i> Python</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-solid fa-database"></i> SQL</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-java"></i> Java</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-wordpress"></i> WordPress</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="skills-heading"><i class="fa-solid fa-people-group"></i> Soft Skills</div>
+        <div class="soft-wrap">
+          <span class="soft-pill"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+          <span class="soft-pill"><i class="fa-solid fa-crown"></i> Leadership</span>
+          <span class="soft-pill"><i class="fa-solid fa-comments"></i> Communication</span>
+          <span class="soft-pill"><i class="fa-solid fa-list-check"></i> Organizing</span>
+          <span class="soft-pill"><i class="fa-solid fa-gears"></i> Management</span>
+          <span class="soft-pill"><i class="fa-solid fa-pen-nib"></i> Graphics Design</span>
+          <span class="soft-pill"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
+          <span class="soft-pill"><i class="fa-solid fa-hands-holding-child"></i> Mentorship</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     LANGUAGES
+══════════════════════════════════════════ -->
+<section id="languages">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-language"></i> Communication</div>
+    <h2 class="section-title reveal">Languages <em>I Speak</em></h2>
+    <p class="section-sub reveal">Communicating confidently across spoken and written domains.</p>
+    <div class="lang-grid reveal">
+      <div>
+        <div class="lang-block-title"><i class="fa-solid fa-microphone"></i> Speaking &amp; Listening</div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇧🇩</span> Bengali (Bangla)</div>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇬🇧</span> English</div>
+          <span class="lang-level">Conversational</span>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇮🇳</span> Hindi</div>
+          <span class="lang-level">Fluent</span>
+        </div>
+      </div>
+      <div>
+        <div class="lang-block-title"><i class="fa-solid fa-pen-to-square"></i> Reading &amp; Writing</div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇧🇩</span> Bengali (Bangla)</div>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇬🇧</span> English</div>
+          <span class="lang-level">Proficient</span>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name"><span class="lang-flag">🇮🇳</span> Hindi</div>
+          <span class="lang-note">Spoken only</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ACTIVITIES
+══════════════════════════════════════════ -->
+<section id="activities">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-bolt"></i> Beyond the classroom</div>
+    <h2 class="section-title reveal">Activities &amp; <em>Leadership</em></h2>
+    <p class="section-sub reveal">Shaping the academic community through leadership, competition, and service.</p>
+    <div class="activities-grid">
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/president-gsec.webp" alt="President GSEC">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-crown"></i></div>
+          </div>
+          <div class="activity-role">President</div>
+          <div class="activity-org">Green Software Engineering Club (GSEC)</div>
+          <div class="activity-desc">Leading policy-making, events, and community building for the university's premier software engineering club.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/joint-media&it-secretary.webp" alt="Media Secretary">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-tower-broadcast"></i></div>
+          </div>
+          <div class="activity-role">Joint Media &amp; IT Secretary</div>
+          <div class="activity-org">Green University Sanatani Committee (GUSC)</div>
+          <div class="activity-desc">Overseeing digital communication and IT infrastructure for the university committee.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/student-mentor-261.webp" alt="Student Mentor">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+          </div>
+          <div class="activity-role">Student Mentor</div>
+          <div class="activity-org">Dept. of Mentorship Program 261</div>
+          <div class="activity-desc">Empowering junior students with guidance, structured thinking, and the confidence to grow.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/idpc-2nd-runner-up.webp" alt="IDPC Logic Battle">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-trophy"></i></div>
+          </div>
+          <div class="activity-role">2nd Runner Up</div>
+          <div class="activity-org">IDPC Logic Battle 2025</div>
+          <div class="activity-desc">Competed in algorithmic problem solving under pressure, earning departmental recognition.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/typing-contest-3rd.webp" alt="Typing Contest">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-keyboard"></i></div>
+          </div>
+          <div class="activity-role">3rd Place</div>
+          <div class="activity-org">Neuro Sprint 1.0 by GENESIS</div>
+          <div class="activity-desc">Recognized as a top-tier speed typist in a competitive university typing championship.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/participant-aust-codeclash.webp" alt="CodeClash">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-code-branch"></i></div>
+          </div>
+          <div class="activity-role">Participant</div>
+          <div class="activity-org">CodeClash, Oscillon by IEEE AUST</div>
+          <div class="activity-desc">Represented the university in an inter-institutional competitive programming contest.</div>
+        </div>
+      </div>
+
+      <div class="card activity-card reveal">
+        <div class="activity-img-wrap">
+          <img class="activity-img" src="images/Activities/planet-langlit-volunteer.webp" alt="Volunteer">
+        </div>
+        <div class="activity-body">
+          <div class="activity-icon-row">
+            <div class="activity-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
+          </div>
+          <div class="activity-role">Volunteer</div>
+          <div class="activity-org">Planet LangLit — English Department</div>
+          <div class="activity-desc">Supporting teamwork and logistics for the annual literary and language festival.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Awards -->
+    <div class="sec-divider reveal"><span><i class="fa-solid fa-award"></i> Awards &amp; Honours</span></div>
+    <div class="awards-grid reveal">
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-medal"></i></div><div class="award-text">Departmental Honour — IDPC Logic Battle</div></div>
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-trophy"></i></div><div class="award-text">IDPC Logic Battle — 2nd Runner Up</div></div>
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-gamepad"></i></div><div class="award-text">Fruit Festival Gaming Prize</div></div>
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-book"></i></div><div class="award-text">Top Academic Result (Batch)</div></div>
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-keyboard"></i></div><div class="award-text">Typing Contest Champion</div></div>
+      <div class="card award-item"><div class="award-icon-box"><i class="fa-solid fa-star"></i></div><div class="award-text">Dean's Award — Green University</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CERTIFICATIONS
+══════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-certificate"></i> Credentials</div>
+    <h2 class="section-title reveal">Certifications</h2>
+    <p class="section-sub reveal">Click any certificate to view it in full. Continuously expanding expertise through recognised programs.</p>
+    <div class="certs-grid">
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/wordpress-w3topper.webp" alt="WordPress W3Topper" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">W3Topper</div><div class="cert-name">WordPress Developer</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/wordpress-coursera.webp" alt="WordPress Coursera" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Coursera</div><div class="cert-name">WordPress Developer</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/c-programming.webp" alt="C Programming" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Data Flair</div><div class="cert-name">C Programming</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/HTML certificate.webp" alt="HTML" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/html-css.webp" alt="HTML CSS" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML5 &amp; CSS3</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/css&javascript.webp" alt="CSS JS" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">CSS &amp; JavaScript</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/basic-freelancing.webp" alt="Freelancing" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">10 Minute School</div><div class="cert-name">Basic Freelancing</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/idpc.webp" alt="Competitive Programming" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">GUBCPC</div><div class="cert-name">Competitive Programming</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/IEEE-day.webp" alt="IEEE Day" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">IEEE Day</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/blockchain-seminar.webp" alt="Blockchain" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">Blockchain Technology</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/typing-contest.webp" alt="Typing Contest" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">GENESIS</div><div class="cert-name">Typing Contest</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/dean's-award-1.webp" alt="Dean's Award" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/dean's-award-2.webp" alt="Dean's Award 2" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award II</div></div></div>
+      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="Images/Certificates/IQ Certificate.webp" alt="IQ" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Cerebrum</div><div class="cert-name">IQ Test</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+  <div style="display:flex;flex-direction:column;align-items:center;">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Certificate">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container section-pad">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Let's connect</div>
+        <h2 class="section-title">Get in <em>touch</em><br>with me</h2>
+        <p style="color:var(--text2);font-weight:300;margin-bottom:2.5rem;line-height:1.8;">Whether you have a research opportunity, a project proposal, or simply want to connect — I'd love to hear from you. I respond promptly.</p>
+        <div class="contact-details">
+          <div class="c-row">
+            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+            <div><div class="c-label">Phone</div><div class="c-val"><a href="tel:+8801518901572">+880 1518 901572</a></div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><div class="c-label">Email</div><div class="c-val"><a href="mailto:mr.sarkar9979@gmail.com">mr.sarkar9979@gmail.com</a></div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><div class="c-label">Location</div><div class="c-val">Keraniganj, Dhaka — 1310</div></div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon"><i class="fa-regular fa-clock"></i></div>
+            <div><div class="c-label">Working Hours</div><div class="c-val">Sun–Thu, 9:00 AM – 5:00 PM</div></div>
+          </div>
+        </div>
+        <div class="social-row" style="margin-top:2rem;">
+          <a href="https://github.com/dsdipu" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://facebook.com" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" placeholder="Rafiq" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Ahmed" required></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="rafiq@example.com" required></div>
+          <div class="form-group"><label>Subject</label><input type="text" placeholder="Research collaboration, internship..." required></div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell me about your project or opportunity..." required></textarea></div>
+          <button type="submit" class="btn-primary" style="align-self:flex-start;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-deco"></div>
+  <div class="footer-deco2"></div>
+
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" id="nav-logo-footer"><img src="images/Logo/DS.png" alt=""></a>
+      <p style="margin-top:1rem;">Software Engineering student, community leader, and aspiring engineer from Dhaka, Bangladesh. Building things that matter.</p>
+      <div class="footer-social">
+        <a href="https://github.com/dsdipu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:mr.sarkar9979@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+        <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+        <li><a href="#activities"><i class="fa-solid fa-chevron-right"></i> Activities</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>More</h4>
+      <ul>
+        <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Certifications</a></li>
+        <li><a href="pages/blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+        <li><a href="#languages"><i class="fa-solid fa-chevron-right"></i> Languages</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+        <li><a href="https://dsdipu.github.io/portfolio/Pages/CV/CV.html" target="_blank"><i class="fa-solid fa-chevron-right"></i> Resume</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+8801518901572"><i class="fa-solid fa-phone"></i> +880 1518 901572</a></li>
+        <li><a href="mailto:mr.sarkar9979@gmail.com"><i class="fa-solid fa-envelope"></i> mr.sarkar9979</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-location-dot"></i> Keraniganj, Dhaka</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Made with <i class="fa-solid fa-heart" style="color:var(--accent);font-size:0.75rem;"></i> by <span class="grad-text">Dipankar Sarkar</span> &copy; 2026</p>
+    <p>Built with HTML, CSS &amp; JavaScript — no frameworks</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Structures — Dipankar Sarkar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">D<span class="dot">.</span>Sarkar</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon" id="themeIcon"></i><span id="themeText">Dark</span></button>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="blog-post-wrap">
+  <div class="post-header reveal">
+    <a href="blog.html" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:var(--text3);margin-bottom:1.5rem;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">
+      <i class="fa-solid fa-arrow-left"></i> Back to Blog
+    </a>
+    <span class="blog-tag"><i class="fa-solid fa-code"></i> Software Engineering</span>
+    <h1 style="margin-top:1rem;">Why Every CS Student Should Learn Data Structures Early</h1>
+    <div class="blog-meta" style="margin-top:1rem;">
+      <i class="fa-solid fa-user"></i> Dipankar Sarkar
+      <span>·</span>
+      <i class="fa-regular fa-calendar"></i> February 2025
+      <span>·</span>
+      <i class="fa-regular fa-clock"></i> 5 min read
+    </div>
+  </div>
+
+  <img class="post-cover reveal" src="https://dsdipu.github.io/portfolio/Images/Activities/idpc-2nd-runner-up.webp" alt="Data Structures">
+
+  <div class="post-body reveal">
+    <p>I remember the first time I encountered a problem in a competitive programming contest that I simply could not solve — not because I lacked logic, but because I did not have the right tool. I was trying to cut wood with a spoon. The problem required a segment tree. I did not know what that was.</p>
+    <p>That moment, frustrating as it was, became one of the most important lessons of my academic journey: the data structure you choose does not just determine how fast your code runs. It determines whether you can even solve the problem at all.</p>
+
+    <h2>What Are Data Structures, Really?</h2>
+    <p>Most students, when they hear "data structures," think of arrays, linked lists, and maybe a stack or queue. And while those are the building blocks, data structures are something far more profound. They are ways of organizing information so that you can ask questions of it efficiently.</p>
+    <p>Think of a dictionary. You do not read every page to find a word — you use alphabetical ordering, which is itself a data structure choice. A phone book, a hospital patient database, a social media feed — all of these are shaped fundamentally by the data structures powering them underneath.</p>
+
+    <blockquote>"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." — Linus Torvalds</blockquote>
+
+    <h2>The Moment It Changed for Me</h2>
+    <p>When I started participating in competitive programming at Green University, my initial approach was to brute-force everything. Write a loop. Nest another loop if needed. Submit. Get a Time Limit Exceeded verdict. Repeat.</p>
+    <p>It was only after studying arrays more deeply — understanding cache locality, pointer arithmetic, and how memory layout affects performance — that I started to think differently. Then came hashmaps, and problems that once took me hours began resolving in minutes. Then trees. Then graphs. Each new structure opened an entirely new category of problems I could now approach with confidence.</p>
+
+    <h2>Why Early Matters</h2>
+    <p>Here is what nobody tells you in first year: every course you take later — databases, operating systems, algorithms, artificial intelligence — assumes you already think in terms of data structures. If you do not, you will constantly be playing catch-up.</p>
+    <p>Learning data structures early does something else, too. It trains you to think about the shape of a problem before you start writing code. A student who understands data structures will ask: "What are the operations I need to perform, and how frequently?" before touching a keyboard. That habit — of asking the right questions before committing to a solution — is worth more than any specific technical skill.</p>
+
+    <h2>Where to Start</h2>
+    <p>You do not need to memorize every data structure at once. Start with the fundamentals and build genuine intuition for each one before moving on. Arrays and strings first — understand how memory works. Then stacks and queues — understand LIFO and FIFO thinking. Then hashmaps — understand key-value relationships and hashing. Then trees and graphs — understand hierarchy and connectivity.</p>
+    <p>Practice each one by solving real problems, not just reading about them. Use platforms like Codeforces, LeetCode, or HackerRank. The problems will force you to apply what you know and expose exactly where your understanding is shallow.</p>
+
+    <h2>A Note for Bangladeshi Students Specifically</h2>
+    <p>In our academic system, data structures are often taught theoretically — definitions, diagrams, and exam questions. Very few students are pushed to implement and apply these structures under time pressure or real constraints. That gap is costly.</p>
+    <p>I would encourage every CS and Software Engineering student here to find a programming community, join contests, and make data structures a living, breathing part of their education — not just a chapter to memorize before the final exam.</p>
+
+    <h2>Final Thought</h2>
+    <p>The IDPC Logic Battle where I placed second runner-up was not won on cleverness alone. It was won on preparation — on having spent months building familiarity with the right tools. Data structures were those tools.</p>
+    <p>Learn them early. Learn them well. Your future self, staring down a hard problem with a deadline looming, will thank you.</p>
+  </div>
+
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;" class="reveal">
+    <a href="post-leadership.html" class="btn-outline"><i class="fa-solid fa-arrow-left"></i> Previous Article</a>
+    <a href="post-balance.html" class="btn-primary">Next Article <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-deco"></div><div class="footer-deco2"></div>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="../index.html" class="nav-logo">D<span class="dot">.</span>Sarkar</a>
+      <p style="margin-top:1rem;">Software Engineering student from Dhaka, Bangladesh.</p>
+    </div>
+    <div class="footer-col"><h4>Blog</h4><ul>
+      <li><a href="post-leadership.html"><i class="fa-solid fa-chevron-right"></i> Leadership</a></li>
+      <li><a href="post-datastructures.html"><i class="fa-solid fa-chevron-right"></i> Data Structures</a></li>
+      <li><a href="post-balance.html"><i class="fa-solid fa-chevron-right"></i> Balance</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Portfolio</h4><ul>
+      <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+      <li><a href="../index.html#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>Crafted with <i class="fa-solid fa-heart" style="color:var(--accent);font-size:0.75rem;"></i> by <span class="grad-text">Dipankar Sarkar</span> &copy; 2025</p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

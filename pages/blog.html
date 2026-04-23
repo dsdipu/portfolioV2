@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Dipankar Sarkar</title>
+<meta name="description" content="Articles on software engineering, leadership, and academic life by Dipankar Sarkar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">D<span class="dot">.</span>Sarkar</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+      <span id="themeText">Dark</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="eyebrow reveal"><i class="fa-solid fa-feather-pointed"></i> Thoughts &amp; Writing</div>
+    <h1 class="reveal">From the <em>Blog</em></h1>
+    <p class="reveal">Articles on software engineering, academic life, and the art of building a community from scratch.</p>
+  </div>
+</div>
+
+<div class="blog-page-wrap">
+
+  <!-- FEATURED POST -->
+  <div class="blog-featured reveal">
+    <div class="card blog-featured-card">
+      <img class="blog-featured-img" src="https://dsdipu.github.io/portfolio/Images/Activities/student-mentor-261.webp" alt="Blog Featured">
+      <div class="blog-featured-body">
+        <span class="blog-tag"><i class="fa-solid fa-crown"></i> Leadership</span>
+        <div class="blog-featured-title">Leading a University Club: What I Learned in My First Year as President of GSEC</div>
+        <div class="blog-meta">
+          <i class="fa-regular fa-calendar"></i> January 2025
+          <span>·</span>
+          <i class="fa-regular fa-clock"></i> 7 min read
+        </div>
+        <div class="blog-featured-exc">The unexpected lessons from becoming President of GSEC — on people, process, and the quiet courage it takes to build something that outlasts you.</div>
+        <a href="post-leadership.html" class="btn-primary" style="font-size:0.78rem;padding:0.7rem 1.5rem;">
+          Read Article <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- OTHER POSTS -->
+  <div class="blog-cards-grid">
+    <div class="card blog-card reveal">
+      <div class="blog-card-img-wrap">
+        <img class="blog-card-img" src="https://dsdipu.github.io/portfolio/Images/Activities/idpc-2nd-runner-up.webp" alt="Data Structures">
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag"><i class="fa-solid fa-code"></i> Software Engineering</span>
+        <div class="blog-meta" style="margin:0.5rem 0;">
+          <i class="fa-regular fa-calendar"></i> February 2025
+          <span>·</span>
+          <i class="fa-regular fa-clock"></i> 5 min read
+        </div>
+        <div class="blog-card-title">Why Every CS Student Should Learn Data Structures Early</div>
+        <div class="blog-card-exc">How a strong foundation in data structures changed the way I approach every problem — from coding contests to everyday decisions.</div>
+        <a href="post-datastructures.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="card blog-card reveal">
+      <div class="blog-card-img-wrap">
+        <img class="blog-card-img" src="https://dsdipu.github.io/portfolio/Images/Activities/president-gsec.webp" alt="Learning">
+      </div>
+      <div class="blog-card-body">
+        <span class="blog-tag"><i class="fa-solid fa-brain"></i> Learning</span>
+        <div class="blog-meta" style="margin:0.5rem 0;">
+          <i class="fa-regular fa-calendar"></i> March 2025
+          <span>·</span>
+          <i class="fa-regular fa-clock"></i> 6 min read
+        </div>
+        <div class="blog-card-title">How I Balance Academics, Mentorship &amp; Self-Learning</div>
+        <div class="blog-card-exc">A candid look at my weekly routine and the habits that keep me progressing — without burning out — across three demanding tracks at once.</div>
+        <a href="post-balance.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-deco"></div><div class="footer-deco2"></div>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="../index.html" class="nav-logo">D<span class="dot">.</span>Sarkar</a>
+      <p style="margin-top:1rem;">Software Engineering student and community leader from Dhaka, Bangladesh.</p>
+      <div class="footer-social">
+        <a href="https://github.com/dsdipu" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Portfolio</h4>
+      <ul>
+        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+        <li><a href="../index.html#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+        <li><a href="../index.html#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Blog</h4>
+      <ul>
+        <li><a href="post-leadership.html"><i class="fa-solid fa-chevron-right"></i> Leadership</a></li>
+        <li><a href="post-datastructures.html"><i class="fa-solid fa-chevron-right"></i> Data Structures</a></li>
+        <li><a href="post-balance.html"><i class="fa-solid fa-chevron-right"></i> Balance</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:mr.sarkar9979@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a></li>
+        <li><a href="../index.html#contact"><i class="fa-solid fa-paper-plane"></i> Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Crafted with <i class="fa-solid fa-heart" style="color:var(--accent);font-size:0.75rem;"></i> by <span class="grad-text">Dipankar Sarkar</span> &copy; 2025</p>
+    <p>Built with HTML, CSS &amp; JavaScript</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
