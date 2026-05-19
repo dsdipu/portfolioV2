@@ -466,9 +466,26 @@ section { border-top: 1px solid var(--border); }
 .activities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.25rem; }
 .activity-card { overflow: hidden; }
 
-.activity-img-wrap { overflow: hidden; height: 180px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.activity-img-wrap { overflow: hidden; height: 180px; position: relative; overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
 .activity-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s var(--ease); }
 .activity-card:hover .activity-img { transform: scale(1.05); }
+
+.activity-date{
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+
+  padding: 1px 30px;
+  border-radius: 20px;
+
+  background: #00aeef;
+  backdrop-filter: blur(4px);
+
+  color: rgb(47, 47, 47);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
 .activity-body { padding: 1.25rem; }
 .activity-icon-row {
