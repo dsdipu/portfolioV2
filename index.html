@@ -14,9 +14,7 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════
-     NAV
-══════════════════════════════════════════ -->
+<!-- ══ NAV ══ -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo"><img src="images/Logo/DS.png" alt="logo"></a>
   <ul class="nav-links" id="navLinks">
@@ -41,75 +39,102 @@
 </nav>
 
 <!-- ══════════════════════════════════════════
-     HERO
+     HERO — NEW CINEMATIC DESIGN
 ══════════════════════════════════════════ -->
 <section id="home">
-  <div class="hero-mesh"></div>
-  <div class="hero-inner">
+  <!-- Animated background grid -->
+  <div class="hero-bg-grid"></div>
+  <!-- Floating orbs -->
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
 
-    <div class="hero-left reveal">
-      <div class="hero-badge-pill">
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-badge-pill hero-anim-1">
         <div class="status-dot"></div>
         Open to Opportunities
       </div>
-      <h1 class="hero-name">
-        Dipankar<br>
-        <span class="line2 grad-text">Sarkar</span>
+
+      <h1 class="hero-name hero-anim-2">
+        <span class="hero-hi">Hi, I'm</span>
+        <span class="hero-firstname">Dipankar</span>
+        <span class="hero-lastname grad-text">Sarkar</span>
       </h1>
-      <p class="hero-role">
-        <span>Software Engineering Student</span>
-        <span class="role-sep">·</span>
-        <span>President of GSEC</span>
-        <span class="role-sep">·</span>
-        <span>Problem Solver</span>
-      </p>
-      <blockquote class="hero-quote">
+
+      <!-- Typewriter role switcher -->
+      <div class="hero-typewriter hero-anim-3">
+        <span class="tw-prefix">I am a </span>
+        <span class="tw-word" id="twWord"></span>
+        <span class="tw-cursor">|</span>
+      </div>
+
+      <blockquote class="hero-quote hero-anim-4">
         "True leadership is not about commanding people — it's about inspiring a community to build something greater than itself."
       </blockquote>
-      <div class="hero-btns">
+
+      <div class="hero-btns hero-anim-5">
         <a href="#projects" class="btn-primary">
-          <i class="fa-solid fa-arrow-down"></i> View My Work
+          <i class="fa-solid fa-rocket"></i> View My Work
         </a>
         <a href="pages/cv.html" target="_blank" class="btn-outline">
           <i class="fa-solid fa-file-lines"></i> Download CV
         </a>
       </div>
-      <div class="hero-stats">
+
+      <div class="hero-stats hero-anim-6">
         <div class="hero-stat">
-          <div class="hero-stat-val">3+</div>
+          <div class="hero-stat-val" data-count="3">0</div>
           <div class="hero-stat-label">Projects Completed</div>
         </div>
+        <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <div class="hero-stat-val">14+</div>
+          <div class="hero-stat-val" data-count="14">0</div>
           <div class="hero-stat-label">Certifications</div>
         </div>
+        <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <div class="hero-stat-val">Dean's</div>
+          <div class="hero-stat-val" data-suffix="'s">Dean</div>
           <div class="hero-stat-label">Award Recipient</div>
         </div>
       </div>
     </div>
 
-    <div class="hero-photo-col reveal">
-      <div class="hero-ring"></div>
+    <!-- RIGHT — Photo -->
+    <div class="hero-right hero-anim-photo">
+      <div class="hero-photo-ring hero-photo-ring-outer"></div>
+      <div class="hero-photo-ring hero-photo-ring-inner"></div>
       <div class="hero-photo-card">
         <img src="images/HeroSection/HeroSection.webp" alt="Dipankar Sarkar">
+        <div class="hero-photo-shine"></div>
       </div>
       <div class="hero-float-badge fb-tl">
-        <div class="float-val">President</div>
-        <div class="float-lbl">of GSEC</div>
+        <div class="fb-icon"><i class="fa-solid fa-crown"></i></div>
+        <div>
+          <div class="float-val">President</div>
+          <div class="float-lbl">of GSEC</div>
+        </div>
       </div>
       <div class="hero-float-badge fb-br">
-        <div class="float-val">GUB</div>
-        <div class="float-lbl">Green University</div>
+        <div class="fb-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <div class="float-val">GUB</div>
+          <div class="float-lbl">Green University</div>
+        </div>
       </div>
     </div>
+  </div>
 
+  <!-- Scroll indicator -->
+  <div class="hero-scroll-hint">
+    <span>Scroll down</span>
+    <div class="hero-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
-     ABOUT
+     ABOUT — TRIMMED
 ══════════════════════════════════════════ -->
 <section id="about">
   <div class="container section-pad">
@@ -118,9 +143,15 @@
     <p class="section-sub reveal">Self Learner. Mentor. Community builder.</p>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong>Software Engineering</strong> undergraduate at Green University of Bangladesh, deeply focused on foundational engineering principles, object-oriented design, and analytical problem solving.</p>
-        <p>Beyond coursework, I actively <strong>mentor junior students</strong>, fostering responsibility, structured thinking, and collaborative problem-solving skills. As <strong>President of the Green Software Engineering Club (GSEC)</strong>, I lead initiatives that bridge academics and industry.</p>
-        <p>I believe the best engineers are not just skilled with code — they are curious, empathetic, and driven by a desire to serve their community. I am all three.</p>
+        <p>I'm a <strong>Software Engineering</strong> undergraduate at Green University of Bangladesh — focused on engineering principles, problem solving, and building things that matter.</p>
+        <p>As <strong>President of GSEC</strong>, I lead initiatives bridging academics and industry, while actively mentoring juniors and competing in programming contests.</p>
+        <div class="about-socials">
+          <a href="https://github.com/dsdipu" target="_blank" class="about-social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dsdipu/" target="_blank" class="about-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/dsdipu0" target="_blank" class="about-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/dsdipu0" target="_blank" class="about-social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@DIPUSWE" target="_blank" class="about-social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
       <div class="about-meta reveal">
         <div class="card meta-card">
@@ -180,18 +211,40 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     PROJECTS
+     PROJECTS — FILTER BY TECH
 ══════════════════════════════════════════ -->
 <section id="projects">
   <div class="container section-pad">
     <div class="eyebrow reveal"><i class="fa-solid fa-code"></i> What I've built</div>
     <h2 class="section-title reveal">Featured <em>Projects</em></h2>
     <p class="section-sub reveal">A selection of work that reflects both my technical ability and creative thinking.</p>
-    <div class="projects-grid">
 
-      <div class="card project-card reveal">
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" id="projectTabs">
+      <button class="filter-tab active" data-filter="all">
+        <i class="fa-solid fa-border-all"></i> All
+      </button>
+      <button class="filter-tab" data-filter="java">
+        <i class="fa-brands fa-java"></i> Java
+      </button>
+      <button class="filter-tab" data-filter="html-css">
+        <i class="fa-brands fa-html5"></i> HTML / CSS
+      </button>
+      <button class="filter-tab" data-filter="tailwind">
+        <i class="fa-brands fa-css3-alt"></i> Tailwind CSS
+      </button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="card project-card reveal" data-tech="java">
         <div class="project-img-wrap">
           <img class="project-img" src="images/Projects/Bangla-bhojon.webp" alt="Bangla Bhojon">
+          <div class="project-overlay">
+            <a href="https://github.com/dsdipu/bangla-bhojon" target="_blank" class="project-overlay-btn">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-num">01</div>
@@ -206,9 +259,14 @@
         </div>
       </div>
 
-      <div class="card project-card reveal">
+      <div class="card project-card reveal" data-tech="html-css">
         <div class="project-img-wrap">
           <img class="project-img" src="images/Projects/portfolio.png" alt="Portfolio">
+          <div class="project-overlay">
+            <a href="https://github.com/dsdipu/portfolio" target="_blank" class="project-overlay-btn">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-num">02</div>
@@ -223,9 +281,14 @@
         </div>
       </div>
 
-      <div class="card project-card reveal">
+      <div class="card project-card reveal" data-tech="tailwind">
         <div class="project-img-wrap">
           <img class="project-img" src="images/Projects/Khuda-lagche.webp" alt="Khuda Lagche">
+          <div class="project-overlay">
+            <a href="https://github.com/dsdipu/khuda-lagche" target="_blank" class="project-overlay-btn">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-num">03</div>
@@ -253,7 +316,6 @@
     <h2 class="section-title reveal">Skills &amp; <em>Expertise</em></h2>
     <p class="section-sub reveal">A growing command of languages, tools, and professional capabilities.</p>
     <div class="skills-grid">
-
       <div class="reveal">
         <div class="skills-heading"><i class="fa-solid fa-terminal"></i> Technical Skills</div>
         <div class="skill-item">
@@ -285,7 +347,6 @@
           <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
         </div>
       </div>
-
       <div class="reveal">
         <div class="skills-heading"><i class="fa-solid fa-people-group"></i> Soft Skills</div>
         <div class="soft-wrap">
@@ -299,7 +360,6 @@
           <span class="soft-pill"><i class="fa-solid fa-hands-holding-child"></i> Mentorship</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -348,155 +408,151 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     ACTIVITIES
+     ACTIVITIES — TABBED CAROUSEL
 ══════════════════════════════════════════ -->
 <section id="activities">
   <div class="container section-pad">
     <div class="eyebrow reveal"><i class="fa-solid fa-bolt"></i> Beyond the classroom</div>
     <h2 class="section-title reveal">Activities &amp; <em>Leadership</em></h2>
     <p class="section-sub reveal">Shaping the academic community through leadership, competition, and service.</p>
-    <div class="activities-grid">
 
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/president-gsec.webp" alt="President GSEC">
+    <!-- Category Tabs -->
+    <div class="filter-tabs reveal" id="activityTabs">
+      <button class="filter-tab active" data-cat="leadership">
+        <i class="fa-solid fa-crown"></i> Leadership
+      </button>
+      <button class="filter-tab" data-cat="competitions">
+        <i class="fa-solid fa-trophy"></i> Competitions
+      </button>
+      <button class="filter-tab" data-cat="volunteer">
+        <i class="fa-solid fa-handshake-angle"></i> Volunteer
+      </button>
+    </div>
 
-          <div class="activity-date">Sep 2025</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-crown"></i></div>
-          </div>
-          <div class="activity-role">President</div>
-          <div class="activity-org">Green Software Engineering Club (GSEC)</div>
-          <div class="activity-desc">Leading policy-making, events, and community building for the university's premier software engineering club.</div>
-        </div>
-      </div>
+    <!-- Carousel Wrapper -->
+    <div class="carousel-section reveal">
+      <button class="carousel-arrow carousel-prev" id="actPrev" aria-label="Previous">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="carousel-viewport" id="activityCarousel">
+        <div class="carousel-track" id="activityTrack">
 
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/joint-media&it-secretary.webp" alt="Media Secretary">
-
-          <div class="activity-date">Nov 2025</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-tower-broadcast"></i></div>
-          </div>
-          <div class="activity-role">Joint Media &amp; IT Secretary</div>
-          <div class="activity-org">Green University Sanatani Committee (GUSC)</div>
-          <div class="activity-desc">Overseeing digital communication and IT infrastructure for the university committee.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/student-mentor-261.webp" alt="Student Mentor">
-
-          <div class="activity-date">Jan 2026</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-user-graduate"></i></div>
-          </div>
-          <div class="activity-role">Student Mentor</div>
-          <div class="activity-org">Dept. of Mentorship Program 261</div>
-          <div class="activity-desc">Empowering junior students with guidance, structured thinking, and the confidence to grow.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/idpc-2nd-runner-up.webp" alt="IDPC Logic Battle">
-
-          <div class="activity-date">Mar 2025</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-trophy"></i></div>
-          </div>
-          <div class="activity-role">2nd Runner Up</div>
-          <div class="activity-org">IDPC Logic Battle 2025</div>
-          <div class="activity-desc">Competed in algorithmic problem solving under pressure, earning departmental recognition.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/typing-contest-3rd.webp" alt="Typing Contest">
-
-          <div class="activity-date">Nov 2025</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-keyboard"></i></div>
-          </div>
-          <div class="activity-role">3rd Place</div>
-          <div class="activity-org">Neuro Sprint 1.0 by GENESIS</div>
-          <div class="activity-desc">Recognized as a top-tier speed typist in a competitive university typing championship.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/participant-aust-codeclash.webp" alt="CodeClash">
-
-          <div class="activity-date">Sep 2025</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-code-branch"></i></div>
-          </div>
-          <div class="activity-role">Participant</div>
-          <div class="activity-org">CodeClash, Oscillon by IEEE AUST</div>
-          <div class="activity-desc">Represented the university in an inter-institutional competitive programming contest.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/planet-langlit-volunteer.webp" alt="Volunteer">
-
-          <div class="activity-date">Jan 2026</div>
-        </div>
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
-          </div>
-          <div class="activity-role">Volunteer</div>
-          <div class="activity-org">Planet LangLit — English Department</div>
-          <div class="activity-desc">Supporting teamwork and logistics for the annual literary and language festival.</div>
-        </div>
-      </div>
-
-      <div class="card activity-card reveal">
-        <div class="activity-img-wrap">
-          <img class="activity-img" src="images/Activities/industryVisit.jpg" alt="Participant">
-
-          <!-- Date -->
-          <div class="activity-date">Apr 2026</div>
-        </div>
-
-        <div class="activity-body">
-          <div class="activity-icon-row">
-            <div class="activity-icon-box">
-              <i class="fa-solid fa-code-branch"></i>
+          <!-- LEADERSHIP -->
+          <div class="card activity-card carousel-item" data-cat="leadership">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/president-gsec.webp" alt="President GSEC">
+              <div class="activity-date">Sep 2025</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-crown"></i></div></div>
+              <div class="activity-role">President</div>
+              <div class="activity-org">Green Software Engineering Club (GSEC)</div>
+              <div class="activity-desc">Leading policy-making, events, and community building for the university's premier software engineering club.</div>
             </div>
           </div>
 
-          <div class="activity-role">Participant</div>
-
-          <div class="activity-org">
-            Industry Exploration Visit - TECHNONEXT
+          <div class="card activity-card carousel-item" data-cat="leadership">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/joint-media&it-secretary.webp" alt="Media Secretary">
+              <div class="activity-date">Nov 2025</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-tower-broadcast"></i></div></div>
+              <div class="activity-role">Joint Media &amp; IT Secretary</div>
+              <div class="activity-org">Green University Sanatani Committee (GUSC)</div>
+              <div class="activity-desc">Overseeing digital communication and IT infrastructure for the university committee.</div>
+            </div>
           </div>
 
-          <div class="activity-desc">
-            Explored industry workflows and workplace culture through a departmental industry visit.
+          <div class="card activity-card carousel-item" data-cat="leadership">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/student-mentor-261.webp" alt="Student Mentor">
+              <div class="activity-date">Jan 2026</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-user-graduate"></i></div></div>
+              <div class="activity-role">Student Mentor</div>
+              <div class="activity-org">Dept. of Mentorship Program 261</div>
+              <div class="activity-desc">Empowering junior students with guidance, structured thinking, and the confidence to grow.</div>
+            </div>
           </div>
+
+          <!-- COMPETITIONS -->
+          <div class="card activity-card carousel-item" data-cat="competitions">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/idpc-2nd-runner-up.webp" alt="IDPC Logic Battle">
+              <div class="activity-date">Mar 2025</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-trophy"></i></div></div>
+              <div class="activity-role">2nd Runner Up</div>
+              <div class="activity-org">IDPC Logic Battle 2025</div>
+              <div class="activity-desc">Competed in algorithmic problem solving under pressure, earning departmental recognition.</div>
+            </div>
+          </div>
+
+          <div class="card activity-card carousel-item" data-cat="competitions">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/typing-contest-3rd.webp" alt="Typing Contest">
+              <div class="activity-date">Nov 2025</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-keyboard"></i></div></div>
+              <div class="activity-role">3rd Place</div>
+              <div class="activity-org">Neuro Sprint 1.0 by GENESIS</div>
+              <div class="activity-desc">Recognized as a top-tier speed typist in a competitive university typing championship.</div>
+            </div>
+          </div>
+
+          <div class="card activity-card carousel-item" data-cat="competitions">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/participant-aust-codeclash.webp" alt="CodeClash">
+              <div class="activity-date">Sep 2025</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-code-branch"></i></div></div>
+              <div class="activity-role">Participant</div>
+              <div class="activity-org">CodeClash, Oscillon by IEEE AUST</div>
+              <div class="activity-desc">Represented the university in an inter-institutional competitive programming contest.</div>
+            </div>
+          </div>
+
+          <!-- VOLUNTEER -->
+          <div class="card activity-card carousel-item" data-cat="volunteer">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/planet-langlit-volunteer.webp" alt="Volunteer">
+              <div class="activity-date">Jan 2026</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-handshake-angle"></i></div></div>
+              <div class="activity-role">Volunteer</div>
+              <div class="activity-org">Planet LangLit — English Department</div>
+              <div class="activity-desc">Supporting teamwork and logistics for the annual literary and language festival.</div>
+            </div>
+          </div>
+
+          <div class="card activity-card carousel-item" data-cat="volunteer">
+            <div class="activity-img-wrap">
+              <img class="activity-img" src="images/Activities/industryVisit.jpg" alt="Industry Visit">
+              <div class="activity-date">Apr 2026</div>
+            </div>
+            <div class="activity-body">
+              <div class="activity-icon-row"><div class="activity-icon-box"><i class="fa-solid fa-building"></i></div></div>
+              <div class="activity-role">Participant</div>
+              <div class="activity-org">Industry Exploration Visit — TECHNONEXT</div>
+              <div class="activity-desc">Explored industry workflows and workplace culture through a departmental industry visit.</div>
+            </div>
+          </div>
+
         </div>
       </div>
-
+      <button class="carousel-arrow carousel-next" id="actNext" aria-label="Next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
+
+    <!-- Carousel dots -->
+    <div class="carousel-dots" id="activityDots"></div>
 
     <!-- Awards -->
     <div class="sec-divider reveal"><span><i class="fa-solid fa-award"></i> Awards &amp; Honours</span></div>
@@ -512,33 +568,113 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     CERTIFICATIONS
+     CERTIFICATIONS — TABBED CAROUSEL
 ══════════════════════════════════════════ -->
 <section id="certifications">
   <div class="container section-pad">
     <div class="eyebrow reveal"><i class="fa-solid fa-certificate"></i> Credentials</div>
     <h2 class="section-title reveal">Certifications</h2>
-    <p class="section-sub reveal">Click any certificate to view it in full. Continuously expanding expertise through recognised programs.</p>
-    <div class="certs-grid">
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/wordpress-w3topper.webp" alt="WordPress W3Topper" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">W3Topper</div><div class="cert-name">WordPress Developer</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/wordpress-coursera.webp" alt="WordPress Coursera" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Coursera</div><div class="cert-name">WordPress Developer</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/c-programming.webp" alt="C Programming" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Data Flair</div><div class="cert-name">C Programming</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/HTML certificate.webp" alt="HTML" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/html-css.webp" alt="HTML CSS" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML5 &amp; CSS3</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/css&javascript.webp" alt="CSS JS" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">CSS &amp; JavaScript</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/basic-freelancing.webp" alt="Freelancing" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">10 Minute School</div><div class="cert-name">Basic Freelancing</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/idpc.webp" alt="Competitive Programming" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">GUBCPC</div><div class="cert-name">Competitive Programming</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/IEEE-day.webp" alt="IEEE Day" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">IEEE Day</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/blockchain-seminar.webp" alt="Blockchain" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">Blockchain Technology</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/typing-contest.webp" alt="Typing Contest" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">GENESIS</div><div class="cert-name">Typing Contest</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/dean's-award-1.webp" alt="Dean's Award" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/dean's-award-2.webp" alt="Dean's Award 2" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award II</div></div></div>
-      <div class="card cert-card reveal"><div class="cert-img-wrap"><img src="images/Certificates/IQ Certificate.webp" alt="IQ" loading="lazy"></div><div class="cert-body"><div class="cert-issuer">Cerebrum</div><div class="cert-name">IQ Test</div></div></div>
+    <p class="section-sub reveal">Click any certificate to view it full size. Continuously expanding expertise through recognised programs.</p>
+
+    <!-- Category Tabs -->
+    <div class="filter-tabs reveal" id="certTabs">
+      <button class="filter-tab active" data-cert-cat="all">
+        <i class="fa-solid fa-border-all"></i> All
+      </button>
+      <button class="filter-tab" data-cert-cat="academic">
+        <i class="fa-solid fa-graduation-cap"></i> Academic
+      </button>
+      <button class="filter-tab" data-cert-cat="online">
+        <i class="fa-solid fa-laptop"></i> Online Courses
+      </button>
+      <button class="filter-tab" data-cert-cat="event">
+        <i class="fa-solid fa-calendar-check"></i> Event Certificates
+      </button>
     </div>
+
+    <!-- Carousel -->
+    <div class="carousel-section reveal">
+      <button class="carousel-arrow carousel-prev" id="certPrev" aria-label="Previous">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="carousel-viewport" id="certCarousel">
+        <div class="carousel-track" id="certTrack">
+
+          <!-- ACADEMIC -->
+          <div class="card cert-card carousel-item" data-cert-cat="academic">
+            <div class="cert-img-wrap"><img src="images/Certificates/dean's-award-1.webp" alt="Dean's Award" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="academic">
+            <div class="cert-img-wrap"><img src="images/Certificates/dean's-award-2.webp" alt="Dean's Award 2" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Green University</div><div class="cert-name">Dean's Award II</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="academic">
+            <div class="cert-img-wrap"><img src="images/Certificates/idpc.webp" alt="Competitive Programming" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">GUBCPC</div><div class="cert-name">Competitive Programming</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="academic">
+            <div class="cert-img-wrap"><img src="images/Certificates/IQ Certificate.webp" alt="IQ" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Cerebrum</div><div class="cert-name">IQ Test</div></div>
+          </div>
+
+          <!-- ONLINE COURSES -->
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/wordpress-w3topper.webp" alt="WordPress W3Topper" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">W3Topper</div><div class="cert-name">WordPress Developer</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/wordpress-coursera.webp" alt="WordPress Coursera" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Coursera</div><div class="cert-name">WordPress Developer</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/c-programming.webp" alt="C Programming" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Data Flair</div><div class="cert-name">C Programming</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/HTML certificate.webp" alt="HTML" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/html-css.webp" alt="HTML CSS" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">HTML5 &amp; CSS3</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/css&javascript.webp" alt="CSS JS" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">Udemy</div><div class="cert-name">CSS &amp; JavaScript</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="online">
+            <div class="cert-img-wrap"><img src="images/Certificates/basic-freelancing.webp" alt="Freelancing" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">10 Minute School</div><div class="cert-name">Basic Freelancing</div></div>
+          </div>
+
+          <!-- EVENT CERTIFICATES -->
+          <div class="card cert-card carousel-item" data-cert-cat="event">
+            <div class="cert-img-wrap"><img src="images/Certificates/IEEE-day.webp" alt="IEEE Day" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">IEEE Day</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="event">
+            <div class="cert-img-wrap"><img src="images/Certificates/blockchain-seminar.webp" alt="Blockchain" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">IEEE GUB</div><div class="cert-name">Blockchain Technology</div></div>
+          </div>
+          <div class="card cert-card carousel-item" data-cert-cat="event">
+            <div class="cert-img-wrap"><img src="images/Certificates/typing-contest.webp" alt="Typing Contest" loading="lazy"></div>
+            <div class="cert-body"><div class="cert-issuer">GENESIS</div><div class="cert-name">Typing Contest</div></div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-next" id="certNext" aria-label="Next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Carousel dots -->
+    <div class="carousel-dots" id="certDots"></div>
   </div>
 </section>
 
-<!-- ── LIGHTBOX ── -->
+<!-- LIGHTBOX -->
 <div class="lightbox-overlay" id="lightboxOverlay">
   <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
   <div style="display:flex;flex-direction:column;align-items:center;">
@@ -577,10 +713,10 @@
         </div>
         <div class="social-row" style="margin-top:2rem;">
           <a href="https://github.com/dsdipu" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-          <a href="https://facebook.com" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-          <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
-          <a href="https://youtube.com/@DIPUSWE" target="_blank" title="Youtube" class="social-btn"><i class="fa-brands fa-youtube"></i> Youtube</a>
+          <a href="https://www.linkedin.com/in/dsdipu/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://www.facebook.com/dsdipu0" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          <a href="https://instagram.com/dsdipu0" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://youtube.com/@DIPUSWE" target="_blank" class="social-btn"><i class="fa-brands fa-youtube"></i> Youtube</a>
         </div>
       </div>
       <div class="reveal">
@@ -605,59 +741,73 @@
      FOOTER
 ══════════════════════════════════════════ -->
 <footer>
-  <div class="footer-deco"></div>
-  <div class="footer-deco2"></div>
-
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo" id="nav-logo-footer"><img src="images/Logo/DS.png" alt=""></a>
-      <p style="margin-top:1rem;">Software Engineering student, community leader, and aspiring engineer from Dhaka, Bangladesh. Building things that matter.</p>
-      <div class="footer-social">
-        <a href="https://github.com/dsdipu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/dsdipu/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/dsdipu0" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://instagram.com/dsdipu0" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://youtube.com/@DIPUSWE" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="mailto:mr.sarkar9979@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+  <div class="footer-inner">
+    <!-- Top strip with logo + tagline -->
+    <div class="footer-hero-strip">
+      <div class="footer-hero-left">
+        <a href="index.html" id="nav-logo-footer" class="nav-logo">
+          <img src="images/Logo/favicon/DS.png" alt="DS Logo">
+        </a>
+        <p class="footer-tagline">Building things that matter, one line at a time.</p>
+      </div>
+      <div class="footer-hero-right">
+        <div class="footer-social">
+          <a href="https://github.com/dsdipu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dsdipu/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/dsdipu0" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/dsdipu0" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@DIPUSWE" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="mailto:mr.sarkar9979@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
     </div>
 
-    <div class="footer-col">
-      <h4>Navigate</h4>
-      <ul>
-        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
-        <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
-        <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
-        <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
-        <li><a href="#activities"><i class="fa-solid fa-chevron-right"></i> Activities</a></li>
-      </ul>
+    <!-- Nav columns -->
+    <div class="footer-nav-strip">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+          <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+          <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+          <li><a href="#activities"><i class="fa-solid fa-chevron-right"></i> Activities</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Certifications</a></li>
+          <li><a href="pages/blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+          <li><a href="#languages"><i class="fa-solid fa-chevron-right"></i> Languages</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          <li><a href="pages/cv.html" target="_blank"><i class="fa-solid fa-chevron-right"></i> Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+8801518901572"><i class="fa-solid fa-phone"></i> +880 1518 901572</a></li>
+          <li><a href="mailto:mr.sarkar9979@gmail.com"><i class="fa-solid fa-envelope"></i> mr.sarkar9979@gmail.com</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-location-dot"></i> Keraniganj, Dhaka</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-quote">
+        <h4>Motto</h4>
+        <blockquote class="footer-quote">
+          "Inspire a community to build something greater than itself."
+        </blockquote>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h4>More</h4>
-      <ul>
-        <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Certifications</a></li>
-        <li><a href="pages/blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
-        <li><a href="#languages"><i class="fa-solid fa-chevron-right"></i> Languages</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
-        <li><a href="https://dsdipu.github.io/portfolio/Pages/CV/CV.html" target="_blank"><i class="fa-solid fa-chevron-right"></i> Resume</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="tel:+8801518901572"><i class="fa-solid fa-phone"></i> +880 1518 901572</a></li>
-        <li><a href="mailto:mr.sarkar9979@gmail.com"><i class="fa-solid fa-envelope"></i> mr.sarkar9979@gmail.com</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-location-dot"></i> Keraniganj, Dhaka</a></li>
-      </ul>
+    <!-- Bottom bar -->
+    <div class="footer-bottom-bar">
+      <p>Made with <i class="fa-solid fa-heart" style="color:var(--accent);"></i> by <span class="grad-text">Dipankar Sarkar</span> &copy; 2026</p>
+      <p>HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; No frameworks</p>
     </div>
   </div>
-
-  <div class="footer-bottom">
-    <p>Made with <i class="fa-solid fa-heart" style="color:var(--accent);font-size:0.75rem;"></i> by <span class="grad-text">Dipankar Sarkar</span> &copy; 2026</p>
-    <p>Built with HTML, CSS &amp; JavaScript — no frameworks</p>
-  </div>
+  <div class="footer-deco"></div>
+  <div class="footer-deco2"></div>
 </footer>
 
 <script src="js/main.js"></script>
