@@ -80,11 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
      HERO TYPEWRITER
   ───────────────────────────────────────────── */
   const roles = [
-    'Software Engineer',
+    'Software Engineering Student',
     'President of GSEC',
     'Problem Solver',
     'Student Mentor',
-    'Community Builder'
+    'Community Builder',
+    'Campus Leader'
   ];
   const twWord = document.getElementById('twWord');
   if (twWord) {
