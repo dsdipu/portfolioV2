@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="images/Logo/favicon/DS.png">
-<title>Portfolio | Dipankar Sarkar</title>
-<meta name="description" content="Dipankar Sarkar — Software Engineering student, President of GSEC, problem solver and community leader at Green University of Bangladesh.">
+<title>Academic Portfolio | Dipankar Sarkar</title>
+<meta name="description" content="Dipankar Sarkar — Software Engineering Scholar and Emerging Researcher at Green University of Bangladesh. President of GSEC, student mentor, and aspiring university lecturer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,45 +13,44 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="bg-mesh" id="bgMesh">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
 
-<!-- ══ NAV ══ -->
+<!-- ══ BRAND BADGE ══ -->
+<a href="index.html" class="brand-badge"><img src="images/Logo/DS.png" alt="logo"></a>
+
+<!-- ══ NAV DOCK ══ -->
 <nav id="navbar">
-  <a href="index.html" class="nav-logo"><img src="images/Logo/DS.png" alt="logo"></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#activities">Activities</a></li>
-    <li><a href="#certifications">Certificates</a></li>
-    <li><a href="pages/blog.html">Blog</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home" data-tip="Home"><i class="fa-solid fa-house"></i></a></li>
+    <li><a href="#about" data-tip="About"><i class="fa-solid fa-user"></i></a></li>
+    <li><a href="#research" data-tip="Research"><i class="fa-solid fa-flask"></i></a></li>
+    <li><a href="#education" data-tip="Education"><i class="fa-solid fa-graduation-cap"></i></a></li>
+    <li><a href="#projects" data-tip="Projects"><i class="fa-solid fa-diagram-project"></i></a></li>
+    <li><a href="#skills" data-tip="Skills"><i class="fa-solid fa-layer-group"></i></a></li>
+    <li><a href="#activities" data-tip="Mentorship"><i class="fa-solid fa-chalkboard-user"></i></a></li>
+    <li><a href="#certifications" data-tip="Certificates"><i class="fa-solid fa-award"></i></a></li>
+    <li><a href="pages/blog.html" data-tip="Blog"><i class="fa-solid fa-pen-nib"></i></a></li>
+    <li><a href="#contact" data-tip="Contact"><i class="fa-solid fa-envelope"></i></a></li>
   </ul>
-  <div class="nav-right">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <i class="fa-solid fa-moon" id="themeIcon"></i>
-      <span id="themeText">Dark</span>
-    </button>
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+  <div class="nav-dock-divider"></div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tip="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeIcon"></i>
+  </button>
 </nav>
 
 <!-- ══════════════════════════════════════════
      HERO — NEW CINEMATIC DESIGN
 ══════════════════════════════════════════ -->
 <section id="home">
-  <!-- Animated background grid -->
-  <div class="hero-bg-grid"></div>
-  <!-- Floating orbs -->
-  <div class="hero-orb hero-orb-1"></div>
-  <div class="hero-orb hero-orb-2"></div>
-  <div class="hero-orb hero-orb-3"></div>
+  <div class="hero-bento">
 
-  <div class="hero-inner">
-    <!-- LEFT -->
-    <div class="hero-left">
+    <!-- Text tile -->
+    <div class="hero-text-tile reveal">
       <div class="hero-badge-pill hero-anim-1">
         <div class="status-dot"></div>
         Open to Opportunities
@@ -82,33 +81,12 @@
           <i class="fa-solid fa-file-lines"></i> Download CV
         </a>
       </div>
-
-      <div class="hero-stats hero-anim-6">
-        <div class="hero-stat">
-          <div class="hero-stat-val" data-count="4">0</div>
-          <div class="hero-stat-label">Projects Completed</div>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <div class="hero-stat-val" data-count="15">0</div>
-          <div class="hero-stat-label">Certifications</div>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <div class="hero-stat-val" data-suffix="'s">Dean</div>
-          <div class="hero-stat-label">Award Recipient</div>
-        </div>
-      </div>
     </div>
 
-    <!-- RIGHT — Photo -->
-    <div class="hero-right hero-anim-photo">
-      <div class="hero-photo-ring hero-photo-ring-outer"></div>
-      <div class="hero-photo-ring hero-photo-ring-inner"></div>
-      <div class="hero-photo-card">
-        <img src="images/HeroSection/newHeroImage.png" alt="Dipankar Sarkar">
-        <div class="hero-photo-shine"></div>
-      </div>
+    <!-- Photo tile -->
+    <div class="hero-photo-tile reveal" id="heroPhotoWrap">
+      <img src="images/HeroSection/newHeroImage.png" alt="Dipankar Sarkar" id="heroPhotoCard">
+      <div class="hero-photo-scrim"></div>
       <div class="hero-float-badge fb-tl">
         <div class="fb-icon"><i class="fa-solid fa-crown"></i></div>
         <div>
@@ -124,6 +102,26 @@
         </div>
       </div>
     </div>
+
+    <!-- Stat tiles -->
+    <div class="hero-stats-row hero-anim-6">
+      <div class="hero-stat-tile reveal">
+        <i class="fa-solid fa-rocket hero-stat-icon"></i>
+        <div class="hero-stat-val" data-count="4">0</div>
+        <div class="hero-stat-label">Projects Completed</div>
+      </div>
+      <div class="hero-stat-tile reveal">
+        <i class="fa-solid fa-certificate hero-stat-icon"></i>
+        <div class="hero-stat-val" data-count="15">0</div>
+        <div class="hero-stat-label">Certifications</div>
+      </div>
+      <div class="hero-stat-tile reveal">
+        <i class="fa-solid fa-medal hero-stat-icon"></i>
+        <div class="hero-stat-val" data-static="Dean's">0</div>
+        <div class="hero-stat-label">Award Recipient</div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Scroll indicator -->
@@ -155,7 +153,7 @@
         </div>
       </div>
       <div class="about-meta reveal">
-        <div class="card meta-card">
+        <div class="card meta-card meta-card-wide">
           <div class="meta-icon"><i class="fa-solid fa-graduation-cap"></i></div>
           <div><div class="meta-label">Institution</div><div class="meta-val">Green University of Bangladesh</div></div>
         </div>
@@ -181,6 +179,50 @@
 </section>
 
 <!-- ══════════════════════════════════════════
+     RESEARCH & ACADEMIC INTERESTS
+══════════════════════════════════════════ -->
+<section id="research">
+  <div class="container section-pad">
+    <div class="eyebrow reveal"><i class="fa-solid fa-flask"></i> Scholarly work</div>
+    <h2 class="section-title reveal">Ongoing <em>Research Project</em></h2>
+    <p class="section-sub reveal">A working paper I'm currently drafting, growing out of hands-on requirements-engineering practice.</p>
+
+    <div class="research-spotlight reveal">
+      <div class="rs-glow"></div>
+      <div class="rs-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+      <div class="rs-body">
+        <span class="rs-status"><i class="fa-solid fa-circle-notch fa-spin"></i> In Progress / Draft</span>
+        <h3 class="rs-title">Refining User Stories for Clearer Software Requirements</h3>
+        <p class="rs-desc">An exploration of how well-structured user stories reduce ambiguity in software requirements — comparing story-writing patterns, acceptance-criteria techniques, and their effect on downstream development accuracy.</p>
+        <div class="rs-links">
+          <span class="rs-link-placeholder"><i class="fa-solid fa-quote-left"></i> IEEE / ACM citation — coming soon</span>
+          <a href="https://scholar.google.com/citations?user=" target="_blank" class="rs-link"><i class="fa-brands fa-google"></i> Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/" target="_blank" class="rs-link"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     COURSE MATERIALS CTA BANNER
+══════════════════════════════════════════ -->
+<section id="course-materials-cta">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-banner-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+      <div class="cta-banner-text">
+        <div class="cta-banner-title">Academic Resources &amp; Course Materials</div>
+        <p class="cta-banner-desc">Access structured lecture notes, database guides, programming practice sets, and video tutorials created for junior students.</p>
+      </div>
+      <a href="pages/course-materials.html" class="btn-primary cta-banner-btn">
+        Explore Course Materials <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
      EDUCATION
 ══════════════════════════════════════════ -->
 <section id="education">
@@ -188,24 +230,34 @@
     <div class="eyebrow reveal"><i class="fa-solid fa-book-open"></i> Academic background</div>
     <h2 class="section-title reveal">My <em>Education</em></h2>
     <p class="section-sub reveal">A strong academic foundation across science and engineering disciplines.</p>
-    <div class="edu-grid">
-      <div class="card edu-card reveal">
-        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2024 — Present</div>
-        <div class="edu-degree">BSc in Software Engineering</div>
-        <div class="edu-inst">Green University of Bangladesh</div>
-        <span class="edu-result"><i class="fa-solid fa-circle-notch fa-spin"></i> In Progress</span>
+    <div class="edu-timeline">
+      <div class="edu-track"></div>
+      <div class="edu-node card edu-card reveal">
+        <div class="edu-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="edu-node-body">
+          <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2024 — Present</div>
+          <div class="edu-degree">BSc in Software Engineering</div>
+          <div class="edu-inst">Green University of Bangladesh</div>
+          <span class="edu-result"><i class="fa-solid fa-circle-notch fa-spin"></i> In Progress</span>
+        </div>
       </div>
-      <div class="card edu-card reveal">
-        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2019 — 2021</div>
-        <div class="edu-degree">HSC in Science</div>
-        <div class="edu-inst">Kabi Nazrul Govt. College</div>
-        <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 5.00</span>
+      <div class="edu-node card edu-card reveal">
+        <div class="edu-dot"><i class="fa-solid fa-school"></i></div>
+        <div class="edu-node-body">
+          <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2019 — 2021</div>
+          <div class="edu-degree">HSC in Science</div>
+          <div class="edu-inst">Kabi Nazrul Govt. College</div>
+          <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 5.00</span>
+        </div>
       </div>
-      <div class="card edu-card reveal">
-        <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2017 — 2019</div>
-        <div class="edu-degree">SSC in Science</div>
-        <div class="edu-inst">Sholla High School &amp; College</div>
-        <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 4.78</span>
+      <div class="edu-node card edu-card reveal">
+        <div class="edu-dot"><i class="fa-solid fa-book"></i></div>
+        <div class="edu-node-body">
+          <div class="edu-period"><i class="fa-regular fa-calendar"></i> 2017 — 2019</div>
+          <div class="edu-degree">SSC in Science</div>
+          <div class="edu-inst">Sholla High School &amp; College</div>
+          <span class="edu-result"><i class="fa-solid fa-star"></i> GPA: 4.78</span>
+        </div>
       </div>
     </div>
   </div>
@@ -340,50 +392,39 @@
   <div class="container section-pad">
     <div class="eyebrow reveal"><i class="fa-solid fa-layer-group"></i> What I work with</div>
     <h2 class="section-title reveal">Skills &amp; <em>Expertise</em></h2>
-    <p class="section-sub reveal">A growing command of languages, tools, and professional capabilities.</p>
-    <div class="skills-grid">
+    <p class="section-sub reveal">Organized by domain rather than self-rated percentages, in line with academic presentation standards.</p>
+    <div class="skills-cols-grid">
       <div class="reveal">
-        <div class="skills-heading"><i class="fa-solid fa-terminal"></i> Technical Skills</div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span><span class="skill-pct">95%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-solid fa-c"></i> C / C++</span><span class="skill-pct">90%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git &amp; Version Control</span><span class="skill-pct">85%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-python"></i> Python</span><span class="skill-pct">85%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-solid fa-database"></i> SQL</span><span class="skill-pct">80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-java"></i> Java</span><span class="skill-pct">75%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-row"><span class="skill-name"><i class="fa-brands fa-wordpress"></i> WordPress</span><span class="skill-pct">70%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+        <div class="skills-heading"><i class="fa-solid fa-sitemap"></i> Core CS &amp; Architecture</div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="fa-solid fa-database"></i> DBMS / SQL</span>
+          <span class="skill-chip"><i class="fa-solid fa-cubes"></i> OOP</span>
+          <span class="skill-chip"><i class="fa-solid fa-microchip"></i> Operating Systems</span>
+          <span class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git &amp; Version Control</span>
+          <span class="skill-chip"><i class="fa-solid fa-diagram-project"></i> System Design</span>
         </div>
       </div>
       <div class="reveal">
-        <div class="skills-heading"><i class="fa-solid fa-people-group"></i> Soft Skills</div>
-        <div class="soft-wrap">
-          <span class="soft-pill"><i class="fa-solid fa-brain"></i> Problem Solving</span>
-          <span class="soft-pill"><i class="fa-solid fa-crown"></i> Leadership</span>
-          <span class="soft-pill"><i class="fa-solid fa-comments"></i> Communication</span>
-          <span class="soft-pill"><i class="fa-solid fa-list-check"></i> Organizing</span>
-          <span class="soft-pill"><i class="fa-solid fa-gears"></i> Management</span>
-          <span class="soft-pill"><i class="fa-solid fa-pen-nib"></i> Graphics Design</span>
-          <span class="soft-pill"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
-          <span class="soft-pill"><i class="fa-solid fa-hands-holding-child"></i> Mentorship</span>
+        <div class="skills-heading"><i class="fa-solid fa-terminal"></i> Programming Languages</div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="fa-solid fa-c"></i> C</span>
+          <span class="skill-chip"><i class="fa-solid fa-c"></i> C++</span>
+          <span class="skill-chip"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="skill-chip"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="skill-chip"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+          <span class="skill-chip"><i class="fa-brands fa-php"></i> PHP</span>
+          <span class="skill-chip"><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skills-heading"><i class="fa-solid fa-people-group"></i> Teaching &amp; Soft Skills</div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="fa-solid fa-hands-holding-child"></i> Academic Mentorship</span>
+          <span class="skill-chip"><i class="fa-solid fa-pen-nib"></i> Technical Writing</span>
+          <span class="skill-chip"><i class="fa-solid fa-crown"></i> Leadership</span>
+          <span class="skill-chip"><i class="fa-solid fa-list-check"></i> Event Management</span>
+          <span class="skill-chip"><i class="fa-solid fa-comments"></i> Communication</span>
+          <span class="skill-chip"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
         </div>
       </div>
     </div>
@@ -439,8 +480,62 @@
 <section id="activities">
   <div class="container section-pad">
     <div class="eyebrow reveal"><i class="fa-solid fa-bolt"></i> Beyond the classroom</div>
-    <h2 class="section-title reveal">Activities &amp; <em>Leadership</em></h2>
-    <p class="section-sub reveal">Shaping the academic community through leadership, competition, and service.</p>
+    <h2 class="section-title reveal">Teaching, Mentorship &amp; <em>Leadership</em></h2>
+    <p class="section-sub reveal">Shaping the academic community through structured mentorship, leadership, and service.</p>
+
+    <!-- Teaching & Mentorship Experience — photo-led spotlight -->
+    <div class="mentor-spotlight reveal">
+      <div class="mentor-spotlight-media">
+        <div class="mentor-media-blob"></div>
+        <img src="images/Activities/student-mentor-261.webp" alt="Dipankar Sarkar mentoring students" class="mentor-media-img">
+        <div class="mentor-media-badge">
+          <i class="fa-solid fa-user-graduate"></i>
+          <div>
+            <div class="mmb-val">2 Cohorts</div>
+            <div class="mmb-lbl">Mentorship Program 260 &amp; 261</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-spotlight-content">
+        <div class="mentor-role-block">
+          <div class="mentor-role-head">
+            <div class="mentor-role-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <div class="mentor-role-title">Student Mentor</div>
+              <div class="mentor-role-org">Mentorship Program 260 &amp; 261, Green University of Bangladesh</div>
+            </div>
+          </div>
+          <p class="mentor-role-desc">Guided two consecutive cohorts of junior students through core CS fundamentals with structured, scenario-based teaching.</p>
+          <div class="mentor-chip-label">Core subjects mentored</div>
+          <div class="mentor-chip-row">
+            <span class="mentor-chip">Structured Programming (C)</span>
+            <span class="mentor-chip">Object-Oriented Programming (Java)</span>
+            <span class="mentor-chip">Database Management Systems (DBMS)</span>
+            <span class="mentor-chip">Data Flow Diagrams (DFD)</span>
+          </div>
+        </div>
+
+        <div class="mentor-divider"></div>
+
+        <div class="mentor-role-block">
+          <div class="mentor-role-head">
+            <div class="mentor-role-icon"><i class="fa-solid fa-crown"></i></div>
+            <div>
+              <div class="mentor-role-title">President</div>
+              <div class="mentor-role-org">Green Software Engineering Club (GSEC)</div>
+            </div>
+          </div>
+          <p class="mentor-role-desc">Leading club policy, technical workshops, and peer-learning initiatives that bridge classroom theory with applied practice.</p>
+          <div class="mentor-chip-label">Workshop &amp; facilitation focus</div>
+          <div class="mentor-chip-row">
+            <span class="mentor-chip">Technical Workshops</span>
+            <span class="mentor-chip">Peer Code Review</span>
+            <span class="mentor-chip">Event Facilitation</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Category Tabs -->
     <div class="filter-tabs reveal" id="activityTabs">
@@ -828,18 +923,19 @@
         <h4>Navigate</h4>
         <ul>
           <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+          <li><a href="#research"><i class="fa-solid fa-chevron-right"></i> Research</a></li>
           <li><a href="#education"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
           <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
           <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
-          <li><a href="#activities"><i class="fa-solid fa-chevron-right"></i> Activities</a></li>
+          <li><a href="#activities"><i class="fa-solid fa-chevron-right"></i> Mentorship</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>More</h4>
         <ul>
           <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Certifications</a></li>
+          <li><a href="pages/course-materials.html"><i class="fa-solid fa-chevron-right"></i> Course Materials</a></li>
           <li><a href="pages/blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
-          <li><a href="#languages"><i class="fa-solid fa-chevron-right"></i> Languages</a></li>
           <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
           <li><a href="pages/cv.html" target="_blank"><i class="fa-solid fa-chevron-right"></i> Resume</a></li>
         </ul>

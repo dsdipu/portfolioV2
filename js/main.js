@@ -77,6 +77,34 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
   /* ─────────────────────────────────────────────
+     HERO PHOTO TILT + ORB PARALLAX (mouse-reactive)
+  ───────────────────────────────────────────── */
+  const heroPhotoWrap = document.getElementById('heroPhotoWrap');
+  const heroPhotoCard  = document.getElementById('heroPhotoCard');
+  const heroOrbs = document.querySelectorAll('.bg-mesh .blob');
+  const heroSection = document.getElementById('home');
+
+  if (heroSection && window.matchMedia('(pointer: fine)').matches) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;   // -0.5 → 0.5
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+
+      if (heroPhotoCard) {
+        heroPhotoCard.style.transform = `scale(1.06) rotateY(${px * 10}deg) rotateX(${py * -10}deg)`;
+      }
+      heroOrbs.forEach((orb, i) => {
+        const depth = (i + 1) * 14;
+        orb.style.transform = `translate(${px * depth}px, ${py * depth}px)`;
+      });
+    });
+    heroSection.addEventListener('mouseleave', () => {
+      if (heroPhotoCard) heroPhotoCard.style.transform = '';
+      heroOrbs.forEach(orb => { orb.style.transform = ''; });
+    });
+  }
+
+  /* ─────────────────────────────────────────────
      HERO TYPEWRITER
   ───────────────────────────────────────────── */
   const roles = [
@@ -107,43 +135,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ─────────────────────────────────────────────
      HERO COUNTER ANIMATION
+     (runs numeric counters up from 0; static stats
+     like "Dean's" are written immediately, not animated)
   ───────────────────────────────────────────── */
+  function runCounter(el) {
+    const end = +el.dataset.count;
+    const suf = el.dataset.suffix || '+';
+    let cur = 0;
+    const step = Math.max(1, Math.ceil(end / 30));
+    const timer = setInterval(() => {
+      cur = Math.min(cur + step, end);
+      el.textContent = cur + suf;
+      if (cur >= end) clearInterval(timer);
+    }, 50);
+  }
+
+  // Static (non-numeric) stats — set immediately, no animation needed.
+  document.querySelectorAll('.hero-stat-val[data-static]').forEach(el => {
+    el.textContent = el.dataset.static;
+  });
+
   const counters = document.querySelectorAll('.hero-stat-val[data-count]');
   if (counters.length) {
+    // Low threshold + rootMargin so the counters reliably fire even if
+    // the hero is already (partially) visible on load, instead of
+    // getting stuck at "0" waiting for a 50%-visibility scroll event.
     const cObs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        const el  = entry.target;
-        const end = +el.dataset.count;
-        const suf = el.dataset.suffix || '+';
-        let cur = 0;
-        const step = Math.ceil(end / 30);
-        const timer = setInterval(() => {
-          cur = Math.min(cur + step, end);
-          el.textContent = cur + suf;
-          if (cur >= end) clearInterval(timer);
-        }, 50);
-        cObs.unobserve(el);
+        runCounter(entry.target);
+        cObs.unobserve(entry.target);
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.01, rootMargin: '0px 0px -10% 0px' });
     counters.forEach(el => cObs.observe(el));
-  }
 
-  /* ─────────────────────────────────────────────
-     SKILL BARS
-  ───────────────────────────────────────────── */
-  const skillSection = document.querySelector('.skills-grid');
-  if (skillSection) {
-    const sObs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.querySelectorAll('.skill-fill').forEach(bar => {
-          setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 250);
-        });
-        sObs.unobserve(entry.target);
+    // Fallback: if a counter is already on-screen the moment the page
+    // loads, animate it right away rather than waiting on the observer.
+    requestAnimationFrame(() => {
+      counters.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0 && el.textContent.trim() === '0') {
+          cObs.unobserve(el);
+          runCounter(el);
+        }
       });
-    }, { threshold: 0.2 });
-    sObs.observe(skillSection);
+    });
   }
 
   /* ─────────────────────────────────────────────

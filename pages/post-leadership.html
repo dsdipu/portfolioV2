@@ -13,21 +13,30 @@
 <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
+<div class="bg-mesh" id="bgMesh">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+<a href="../index.html" class="brand-badge"><img src="../images/Logo/DS.png" alt="logo"></a>
+
 <nav id="navbar">
-  <a href="../index.html" class="nav-logo">D<span class="dot">.</span>Sarkar</a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="../index.html#about">About</a></li>
-    <li><a href="../index.html#projects">Projects</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a href="../index.html#home" data-tip="Home"><i class="fa-solid fa-house"></i></a></li>
+    <li><a href="../index.html#about" data-tip="About"><i class="fa-solid fa-user"></i></a></li>
+    <li><a href="../index.html#research" data-tip="Research"><i class="fa-solid fa-flask"></i></a></li>
+    <li><a href="../index.html#projects" data-tip="Projects"><i class="fa-solid fa-diagram-project"></i></a></li>
+    <li><a href="../index.html#skills" data-tip="Skills"><i class="fa-solid fa-layer-group"></i></a></li>
+    <li><a href="../index.html#activities" data-tip="Mentorship"><i class="fa-solid fa-chalkboard-user"></i></a></li>
+    <li><a href="course-materials.html" data-tip="Course Materials"><i class="fa-solid fa-book-open-reader"></i></a></li>
+    <li><a href="blog.html" data-tip="Blog"><i class="fa-solid fa-pen-nib"></i></a></li>
+    <li><a href="../index.html#contact" data-tip="Contact"><i class="fa-solid fa-envelope"></i></a></li>
   </ul>
-  <div class="nav-right">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <i class="fa-solid fa-moon" id="themeIcon"></i>
-      <span id="themeText">Dark</span>
-    </button>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  </div>
+  <div class="nav-dock-divider"></div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tip="Toggle theme">
+    <i class="fa-solid fa-moon" id="themeIcon"></i>
+  </button>
 </nav>
 
 <div class="blog-post-wrap">
